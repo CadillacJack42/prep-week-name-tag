@@ -14,6 +14,7 @@ const introButton = document.getElementById("intro-button")
 const nameButton = document.getElementById("name-button")
 const tagColorButton = document.getElementById('color-button')
 const changeAll = document.getElementById('change-all')
+const nameFont = document.getElementById('font-button')
 
 // EventListener for Greeting
 greetingButton.addEventListener('click', () => {
@@ -37,7 +38,7 @@ changeAll.addEventListener('click', () => {
     userInput.textContent = nameInput.value
 })
 
-// EventListener for color change
+// EventListener and variables for color change
 let colors = ["black", "white", "gray", "silver", "maroon", "red", "purple", "fushsia", "green", "lime", "olive", "yellow", "navy", "blue", "teal", "aqua"]
 
 const tagColor = document.getElementById('tag-color')
@@ -56,9 +57,15 @@ tagColorButton.addEventListener('click', () => {
     }
 })
 
+let fontselection = ["Arial", "Times New Roman", "Times", "Courier New", "Courier", "Verdana", "Georgia", "Palatino", "Garamond", "Bookman", "Tahoma", "Trebuchet MS", "fantasy", "cursive", "serif", "sans-serif"]
+let j = 0
 
+nameFont.addEventListener('click', () => {
+    userInput.style.fontFamily = fontselection[j % fontselection.length]
+    j++
+})
 
-console.log(greeting, greetingInput, greetingButton, intro, introInput, introButton, userInput, nameInput, nameButton, tagColor);
+// console.log(greeting, greetingInput, greetingButton, intro, introInput, introButton, userInput, nameInput, nameButton, tagColor);
 
 
 
