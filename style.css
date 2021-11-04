@@ -9,6 +9,16 @@ html, body{
     text-align: center;
 }
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    margin-left: 50px;
+}
+
 .paper{
     height: 200px;
     width: 300px;
@@ -52,4 +62,9 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.inputs, .buttons {
+    margin-top: 10px;
+    border-radius: 20px;
 }

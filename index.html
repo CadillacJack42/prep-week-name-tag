@@ -8,14 +8,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <h2>Control Panel</h2>
+        <input type="text" id="greeting-input" class="inputs" placeholder="Hello">
+        <button id="greeting-button" class="buttons">Change Greeting</button>
+        <br>
+        <input type="text" id="intro-input" class="inputs" placeholder="my name is">
+        <button id="intro-button" class="buttons">Change intro</button>
+        <br>
+        <input type="text" id="name-input" class="inputs" placeholder="Your name here">
+        <button id="name-button" class="buttons">Change name</button>
+        <br>
+        <button id="change-all" class="buttons">Change All Fields</button>
+        <br>
+        <button id="color-button" class="buttons">Cycle through nametag colors</button>
+        
+    </header>
     <main class="paper">
-        <div class="red">
-            <span class="greeting">Hello</span><br>
-            <span class="who">my name is</span>
+        <div class="red" id="tag-color">
+            <span class="greeting" id="greeting">Hello</span><br>
+            <span class="who" id="slim-shady">my name is</span>
             <article class="white">
-                <span class="my-name">Cadillac Jack</span>
+                <span class="my-name" id="text">Cadillac Jack</span>
             </article>
         </div>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
